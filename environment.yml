@@ -2,10 +2,12 @@ name: pycrism
 channels:
   - conda-forge
 dependencies:
-  - python=3.8
-  - bottleneck>=1.3
-  - joblib>=0.14
-  - matplotlib>=3.1
-  - numpy>=1.18
-  - scipy>=1.4
-  - spectral>=0.19
+  - gdal
+  - spectral
+  - numpy
+  - pdr
+  - scipy
+  - matplotlib
+  - pip:
+    - -e .
+  - python =3.11

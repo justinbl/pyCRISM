@@ -5,15 +5,9 @@ A python implementation of CAT to process CRISM data
 
 The code requires GDAL and you can install it with Anaconda
 ```bash
- conda create -n pycrism
- conda actiavte pycrism
- conda install -c conda-forge gdal
+conda env create -f environment.yml
 ```
 
-To use the package from any path, install it in your environment with the following command from the project root:
-```bash
-pip install -e .
-```
 ## Usage
 
 
