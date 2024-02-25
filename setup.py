@@ -1,8 +1,5 @@
 import setuptools
 
-with open('requirements.txt', 'r') as f:
-    requirements = f.read().strip('\n').split('\n')
-
 package_data = {
     '': ['aux_files/*','aux_files/WA/*','aux_files/VS_ADR/*'],
     }
@@ -22,7 +19,6 @@ setuptools.setup(
     py_modules=["pyCRISM"],
     python_requires='>=3.8',
     setup_requires=['wheel'],
-    install_requires=requirements,
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
