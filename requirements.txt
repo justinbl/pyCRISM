@@ -1,0 +1,5 @@
+spectral
+numpy
+pdr
+scipy
+matplotlib
