@@ -17,7 +17,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     package_data=package_data,
     py_modules=["pyCRISM"],
-    python_requires='>=3.8',
+    python_requires='>=3.11',
     setup_requires=['wheel'],
     classifiers=[
         'Programming Language :: Python :: 3',

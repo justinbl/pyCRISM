@@ -1,4 +1,4 @@
-name: pycrism
+name: pycrism-test
 channels:
   - conda-forge
 dependencies:
