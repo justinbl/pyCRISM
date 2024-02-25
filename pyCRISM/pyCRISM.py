@@ -250,12 +250,13 @@ class CRISMdata:
         print('<> Photometric Correction Processing')
         # Apply photometric correction and store in a temporary variable
         ifdat_photometric_corrected = self.crism_photometric_correction()
-        
+        self.Photometric_correction = True
         print('<> Atmospheric Correction Processing')
         # Perform the first atmospheric correction on the photometrically corrected data
         ifdat_atm_corrected = self.crism_atmospheric_correction(ifdat_photometric_corrected)
         ifdat_patched = self.patch_vs_artifact(ifdat_atm_corrected, self.atm)
-        self.ifdat_corr = self.crism_atmospheric_correction(ifdat_patched)        
+        self.ifdat_corr = self.crism_atmospheric_correction(ifdat_patched)
+        self.Atmospheric_correction = True        
         print('<> Correction Finished')
 
     def crism_photometric_correction(self):

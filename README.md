@@ -9,8 +9,7 @@ conda env create -f environment.yml
 ```
 
 ## Usage
-
-
+See demo.ipynb
 
 ## License
 This package is released under a MIT open source license. See LICENSE for more details.
