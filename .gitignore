@@ -4,3 +4,6 @@ __pycache__/
 data/
 .venv/
 pyCRISM.egg-info/
+dist/
+build/
+
